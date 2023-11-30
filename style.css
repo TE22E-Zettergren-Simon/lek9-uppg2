@@ -91,3 +91,20 @@ footer {
 		width: 90%;
 	}
 }
+
+@media screen and (min-width: 1008px) {
+	main {
+		display: grid;
+		grid-template-columns: 15% auto 15%;
+	}
+
+	.julgran {
+		display: block;
+	}
+
+	.julgran img {
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+	}
+}
