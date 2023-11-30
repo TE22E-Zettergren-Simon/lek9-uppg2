@@ -7,7 +7,8 @@ html {
 header,
 nav,
 main,
-section,
+aside,
+article,
 footer {
 	border: red solid 2px;
 	border-radius: 0.5rem;
@@ -47,7 +48,12 @@ main {
 	margin-bottom: 0.5rem;
 }
 
-section {
+main aside {
+	display: none;
+}
+
+main aside,
+main article {
 	margin: 0.325rem;
 	padding: 0.125rem;
 }
@@ -61,5 +67,27 @@ footer {
 	nav ul {
 		flex-direction: row;
 		justify-content: space-around;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: 20% auto;
+	}
+
+	.sekundär-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sekundär-nav ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.sekundär-nav img {
+		border: black solid 2px;
+		border-radius: 0.5rem;
+		width: 90%;
 	}
 }
